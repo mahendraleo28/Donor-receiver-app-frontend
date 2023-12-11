@@ -65,30 +65,31 @@ function Registration() {
   };
 
   return (
+    <div className="for-overall-page-container">
     <div className="yedookati">
     <form className="form-container-container" onSubmit={handleSubmit}>
   <label>
-    <span>Username:</span>
-    <input className="form-container-input" type="text" value={username} onChange={handleUsernameChange} required />
+    {/* <span>Username:</span> */}
+    <input placeholder="Username" className="form-container-input" type="text" value={username} onChange={handleUsernameChange} required />
   </label>
   <label>
-    <span>Password:</span>
-    <input  className="form-container-input" type="password" value={password} onChange={handlePasswordChange} required />
+    {/* <span>Password:</span> */}
+    <input placeholder="Password"  className="form-container-input" type="password" value={password} onChange={handlePasswordChange} required />
   </label>
   <label>
-    <span>Email:</span>
-    <input className="form-container-input" type="email" value={email} onChange={handleEmailChange} required />
+    {/* <span>Email:</span> */}
+    <input placeholder="Email" className="form-container-input" type="email" value={email} onChange={handleEmailChange} required />
   </label>
   <label>
-    <span>Phone:</span>
-    <input className="form-container-input" type="mobile" value={mobile} onChange={handleMobileChange} required />
+    {/* <span>Phone:</span> */}
+    <input placeholder="Phone" className="form-container-input" type="mobile" value={mobile} onChange={handleMobileChange} required />
   </label>
   <label>
-    <span>Address:</span>
-    <input className="form-container-input" type="text" value={address} onChange={handleAddressChange} required />
+    {/* <span>Address:</span> */}
+    <input placeholder="Address" className="form-container-input" type="text" value={address} onChange={handleAddressChange} required />
   </label>
   <div >
-          <label className="fornametagindrop" htmlFor="role">Role:</label>
+          {/* <label className="fornametagindrop" htmlFor="role">Role:</label> */}
           <select className="form-container-input1" id="role" name="role" value={role} onChange={handleRoleChange}>
             <option value="">Select Role</option>
             <option value="donor">Donor</option>
@@ -106,6 +107,7 @@ function Registration() {
   <button className="login" type='button'>Login</button>
   </Link>
   </h6>
+</div>
 </div>
   );
 }

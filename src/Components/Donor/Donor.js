@@ -125,11 +125,12 @@ const DonationForm = () => {
         </label>
         <div className='for-input-tags'>
         <textarea
+            className='comment-tag-in-donor-page'
             type="textarea"
             name="comment"
             value={donation.comment}
             onChange={handleInputChange}
-            placeholder="Please Type Here.... What You Are Sharing"
+            placeholder="Please Type Here.... What You Are Donating"
             required
           />
           <input
@@ -204,12 +205,12 @@ const DonationForm = () => {
                 <td>{donation.phonenumber}</td>
                 <td>{`${donation.addressLine1}, ${donation.addressLine2}, ${donation.state}, ${donation.country} - ${donation.postalCode}`}</td>
                 <td>
-                  <button
+                  <p
                     className='delete-button'
                     onClick={() => handleDelete(donation.id)}
                   >
                     Delete
-                  </button>
+                  </p>
                 </td>
               </tr>
             ))}
