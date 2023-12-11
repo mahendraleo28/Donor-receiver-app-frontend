@@ -1,0 +1,40 @@
+.dropdown-for-donor-1st-dropdown {
+    padding: 5px 85px;
+    margin-left: 550px;
+    margin-bottom: 5px;
+}
+.Header-for-the-donation-page {
+    color: black;
+    text-align: center;
+}
+.text-for-the-donation-page {
+    margin-left: 550px;
+    color: black;
+    margin-top: 50px;
+}
+.submit-button-in-donor-page {
+    padding: 10px 16px;
+    background-color: rgb(123, 123, 241);
+    /* border-radius: 20px; */
+    border-style: none;
+    margin-left: 750px;
+    /* margin-top: 50px; */
+}
+.for-input-tags input,textarea {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 80px;
+    margin-left: 550px;
+}
+.table-move-in-donor-page {
+    margin-left: 70px;
+}
+.donations-in-donor-page {
+    color: black;
+    /* margin-left: 430px; */
+    text-align: center;
+    margin-top: 100px;
+}
+.table-data-in-reciever-page {
+    margin-bottom: 100px;
+}

@@ -1,0 +1,16 @@
+.table-header-in-reciever-page th{
+    border-color: black;
+    border-style: groove;
+    width: 190px;
+    color: black;
+    margin-left: 100px;
+}
+.table-data-in-reciever-page td{
+    border-style: groove;
+    border-color: black;
+    text-align: center;
+    color: black;
+}
+.donations-in-reciever-page {
+    color: black;
+}

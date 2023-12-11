@@ -1,0 +1,47 @@
+.navbarinhome{
+  width: 100%;
+  position: fixed;
+  /* background-color: black; */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  /* margin-top: 150px; */
+}
+.text {
+  margin-top: 200px;
+  color: black ;
+}
+body{
+  background: white !important;
+}
+.text:hover{
+  color: #747980;
+}
+
+.home{
+  text-align: center;
+  margin-top: 10%;
+  color: rgb(0, 136, 255);
+}
+.home button{
+  padding: 20px;
+  margin-left: 10px;
+  background-color: #6749ee;
+  color: aliceblue;
+  cursor: pointer;
+}
+.home button:hover{
+  color: rgb(0, 255, 64);
+  box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 10.19);
+}
+.logout{
+  background-color: white;
+  color: rgb(15, 14, 65);
+  padding: 20px;
+  margin-top: 20%;
+  margin-left: 45%;
+}
+/* .logout:hover{
+  background-color: red;
+  color: antiquewhite;
+} */
