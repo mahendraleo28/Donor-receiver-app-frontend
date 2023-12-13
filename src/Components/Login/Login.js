@@ -4,27 +4,27 @@ import { useNavigate } from "react-router-dom";
 import {Link} from 'react-router-dom';
 
 function Login() {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [selectedRole, setSelectedRole] = useState('employee');
+  const [selectedRole] = useState('employee');
   const [message, setMessage] = useState(null);
 
   const navigate = useNavigate();
 
-  const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
   };
 
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
 
-  const handleRoleChange = (event) => {
-    setSelectedRole(event.target.value);
-  };
+  // const handleRoleChange = (event) => {
+  //   setSelectedRole(event.target.value);
+  // };
   
   const reset =()=>{
-    setUsername("")
+    setEmail("")
     setPassword("")
  }
   
@@ -35,7 +35,7 @@ function Login() {
       const response = await fetch('http://localhost:8081/user', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password, role: selectedRole })
+        body: JSON.stringify({ email, password, role: selectedRole })
       });
 
       if (response.ok) {
@@ -55,29 +55,21 @@ function Login() {
       }
     } catch (error) {
       console.error('An error occurred:', error);
-      setMessage('An error occurred, please try again later.');
+      setMessage(`${error}`);
     }
   };
 
   return (
     <div className="yedookatiinlogin">
-      {/* <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt=""/> */}
     <form className="login-form" onSubmit={handleSubmit}>
       <label>
-        Username:
-        <input className="username-input" type="text" value={username} onChange={handleUsernameChange} required />
+        {/* Email: */}
+        <input placeholder="Email" className="username-input" type="email" value={email} onChange={handleEmailChange} required />
       </label>
       <label>
-        Password:
-        <input className="password-input" type="password" value={password} onChange={handlePasswordChange} required/>
+        {/* Password: */}
+        <input placeholder="Password" className="password-input" type="password" value={password} onChange={handlePasswordChange} required/>
       </label>
-      {/* <label>
-          User Role:
-          <select value={selectedRole} onChange={handleRoleChange}>
-            <option value="officer">Donor</option>
-            <option value="admin">Reciever</option>
-          </select>
-        </label> */}
       <div className="button-container">
         <button className="login-button" type="submit">Login</button>
         <br/>

@@ -32,14 +32,16 @@ const Reciever = () => {
         <br/>
         <br/>
         <br/>
-        <h1 className="donations-in-reciever-page">Welcome To The Reciever's page</h1>
+        <h1 className="donations-in-reciever-page">Welcome To The Receiver's page</h1>
         <br/>
       <h4 className="donations-in-reciever-page">All Donations</h4>
-      <table>
+      <table className="table-in-receiver-page">
         <thead>
           <tr className="table-header-in-reciever-page">
             <th>ID</th>
             <th>Type</th>
+            <th>Comment</th>
+            <th>Phone</th>
             <th>Address</th>
           </tr>
         </thead>
@@ -48,6 +50,8 @@ const Reciever = () => {
             <tr className="table-data-in-reciever-page" key={donation.id}>
               <td>{donation.id}</td>
               <td>{donation.donationType}</td>
+              <td>{donation.comment}</td>
+              <td>{donation.phonenumber}</td>
               <td>{`${donation.addressLine1}, ${donation.addressLine2}, ${donation.state}, ${donation.country} - ${donation.postalCode}`}</td>
             </tr>
           ))}

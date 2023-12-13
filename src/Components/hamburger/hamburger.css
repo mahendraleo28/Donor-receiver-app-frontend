@@ -26,6 +26,8 @@ body
   -webkit-user-select: none;
   user-select: none; */
   display: block;
+  visibility: hidden;
+  /* z-index: 1; */
     position: fixed;
     top: 23px;
     left: 22px;

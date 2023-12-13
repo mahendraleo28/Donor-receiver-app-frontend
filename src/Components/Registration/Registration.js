@@ -58,9 +58,10 @@ function Registration() {
         const errorData = await response.json();
         setMessage(`Registration failed: ${errorData.message}`);
       }
-    } catch (error) {
+    }
+     catch (error) {
       console.error('An error occurred:', error);
-      setMessage('An error occurred, please try again later.');
+      setMessage(`${error}`);
     }
   };
 

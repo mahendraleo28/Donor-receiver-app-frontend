@@ -1,15 +1,24 @@
 .table-header-in-reciever-page th{
-    border-color: black;
-    border-style: groove;
+    padding: 5px 30px;
+    border-color: rgb(0, 0, 0);
     width: 190px;
-    color: black;
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 14, 65);
+    border-color: black;
 }
 .table-data-in-reciever-page td{
-    border-style: groove;
     border-color: black;
     text-align: center;
     color: black;
+    border:1px solid;
+    padding: 5px;
 }
 .donations-in-reciever-page {
     color: black;
+    text-align: center;
+}
+.table-in-receiver-page {
+    border-collapse: collapse;
+    margin-left: 50px;
 }

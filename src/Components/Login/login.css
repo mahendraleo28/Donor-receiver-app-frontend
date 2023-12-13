@@ -7,7 +7,7 @@
 
 .username-input,
 .password-input {
-  padding: 10px;
+  padding: 10px 15px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -19,11 +19,7 @@
 
 .login-button{
   background-color: 
-  
-  #19c7e3
-
-
-  ;
+  #19c7e3;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -35,11 +31,7 @@
 
 .reset-button {
   background-color: 
-  
-#747980
-
-
-  ;
+  #747980 ;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -50,7 +42,7 @@
 }
 
 .error-message {
-  color: red;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   margin-top: 10px;
   text-align: center;
