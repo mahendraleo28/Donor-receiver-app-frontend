@@ -9,7 +9,7 @@ const Reciever = () => {
   useEffect(() => {
     const fetchDonations = async () => {
       try {
-        const response = await fetch('http://localhost:8081/donations/all');
+        const response = await fetch('http://localhost:8082/donations/all');
         if (response.ok) {
             console.log("successfull")
           const data = await response.json();

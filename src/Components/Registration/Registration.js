@@ -45,7 +45,7 @@ function Registration() {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8081/register', {
+      const response = await fetch('http://localhost:8082/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password, email, mobile, address ,role})

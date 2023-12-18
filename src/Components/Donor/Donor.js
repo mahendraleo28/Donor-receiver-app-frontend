@@ -33,7 +33,7 @@ const DonationForm = () => {
   }
   const fetchDonations = async () => {
     try {
-      const response = await fetch('http://localhost:8081/donations/all');
+      const response = await fetch('http://localhost:8082/donations/all');
       if (response.ok) {
         console.log('Successfully fetched donations');
         const data = await response.json();
@@ -61,7 +61,7 @@ const DonationForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8081/donations/submit', {
+      const response = await fetch('http://localhost:8082/donations/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ const DonationForm = () => {
   };
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8081/donations/${id}`, {
+      const response = await fetch(`http://localhost:8082/donations/${id}`, {
         method: 'DELETE',
       });
 
@@ -126,7 +126,7 @@ const DonationForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:8081/donations/${selectedDonation.id}`, {
+      const response = await fetch(`http://localhost:8082/donations/${selectedDonation.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
